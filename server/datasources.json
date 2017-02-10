@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "database":{
-    "url":"",
+    "url":"postgres://nlejaudlitncnu:c5e15aa8b5d6861f31363f1528cc209d779ef76d972c854c3316d681a671a464@ec2-23-23-212-121.compute-1.amazonaws.com:5432/d61ddel63li8pe?sslmode=require",
     "connector":"postgresql"
   }
 }

@@ -1,0 +1,34 @@
+{
+  "name": "Tweet",
+  "plural": "tweets",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [{
+  "accessType": "*",
+  "principalType": "ROLE",
+  "principalId": "$everyone",
+  "permission": "DENY"
+}],
+  "methods": {}
+}
